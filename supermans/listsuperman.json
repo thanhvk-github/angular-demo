@@ -1,0 +1,23 @@
+[
+	{
+		"imgUrl": "images/superman-01.jpg",
+		"name": "Superman",
+		"id": "spm-superman",
+		"age": 35,
+		"description": "The powers of DC Comics character Superman have changed since his introduction in the 1930s. Many other DC Comics characters have Superman's abilities from Kryptonian DNA, such as Zod, Kara Zor-El, and even the hybrid Superboy."
+	},
+	{
+		"imgUrl": "images/batman-01.jpg",
+		"name": "Batman",
+		"id": "spm-batman",
+		"age": 30,
+		"description": "Batman is the superhero protector of Gotham City, a man dressed like a bat who fights against evil and strikes terror into the hearts of criminals everywhere. In his secret identity he is Bruce Wayne, billionaire industrialist and notorious playboy. Although he has no superhuman powers, he is one of the world's smartest men and greatest fighters. His physical prowess and technical ingenuity make him an incredibly dangerous opponent. He is also a founding member of the Justice League and the Outsiders."
+	},
+	{
+		"imgUrl": "images/flash-01.jpg",
+		"name": "Flash",
+		"id": "spm-flash",
+		"age": 27,
+		"description": "The Flash is a fictional superhero who appears in American comic books published by DC Comics. Created by writer Gardner Fox and artist Harry Lampert, the original Flash first appeared in Flash Comics #1 (January 1940)"
+	}
+]

@@ -1,0 +1,52 @@
+<div class="navbar navbar-inverse">
+	<div class="container">	
+		<div class="row">
+			<a href="#/" class="navbar-brand">
+				Profile Supermans
+			</a>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		
+		<div class="col-md-5">
+			<div class="main-image">
+				<img ng-src="{{mainImageUrl}}" alt="">
+			</div>			
+		</div>
+		<div class="col-md-7 introduce">
+			<h2>{{supermans.name}}</h2>
+			<p><b>Id:</b> {{supermans.id}}</p>
+			<p><b>Age:</b> {{supermans.age}}</p>
+			<p><b>Description:</b> {{supermans.description}}</p>
+			<ul class="sub-image list-unstyled list-inline">
+				<li ng-repeat="img in supermans.imgUrl">
+					<img ng-src="{{img}}" ng-click="setImageUrl(img)" alt="">
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container content">
+	<div class="row">
+		<div class="col-md-12">
+			<ul class=" nav nav-pills" ng-init="tab = 1">
+				<li ng-class="{active:tab === 1}"><a href ng-click="tab = 1">History</a></li>
+				<li ng-class="{active:tab === 2}"><a href ng-click="tab = 2">Skills</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row panel" ng-show="tab === 1">	
+		<div class="col-md-8">
+			<h3>History</h3>
+			<p ng-repeat="history in supermans.history">{{history}}</p>
+		</div>
+	</div>
+	<div class="row panel" ng-show="tab === 2">
+		<div class="col-md-8">
+			<h3>Skills</h3>
+			<p ng-repeat="skill in supermans.skills">{{skill}}</p>
+		</div>		
+	</div>
+</div>

@@ -1,0 +1,40 @@
+/* index layout */
+body {
+	text-align: justify;
+}
+/* list-supermans template */
+.listsuperman img {
+	width: 100%;
+	border-radius: 50%;
+}
+.navbar-form label {
+	color: #9d9d9d;
+}
+/* detail-supermans template */
+.main-image {
+	padding: 4px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.main-image img {
+	width: 100%;
+}
+.sub-image li {
+	width: 100px;
+	height: 100px;
+	padding: 4px;
+	margin-right: 25px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	vertical-align: top;
+	cursor: pointer;
+}
+.sub-image li img {
+	width: 100%;
+}
+.introduce {
+	padding-left: 35px;
+}
+.content {
+	margin-top: 25px;
+}

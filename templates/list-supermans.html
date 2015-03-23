@@ -1,0 +1,40 @@
+<div class="navbar navbar-inverse">
+	<div class="container">	
+		<div class="row">
+			<a href="#/" class="navbar-brand">
+				Profile Supermans
+			</a>
+			<form class="navbar-form navbar-right">
+				<div class="form-group">
+					<input ng-model="name" class="form-control" type="text" placeholder="Search your hero">
+				</div>
+				<label for="order">Sort by: </label>
+				<select ng-model="order" class="form-control" name="order">
+					<option value="name">Name</option>
+					<option value="age">Younger</option>
+				</select>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row listsuperman well" ng-repeat="superman in supermans | filter: name | orderBy: order">
+
+		<!-- Image of heros -->
+		<div class="col-md-3">
+			<a href="#/{{superman.id}}"><img ng-src="{{superman.imgUrl}}" alt=""></a>
+		</div>
+		<!-- Short infomation of heros -->
+		<div class="col-md-8 col-md-offset-1">
+			<h3>
+				Name: <b>{{superman.name}}</b>
+			</h3>
+			<p>
+				<b>Description: </b>{{superman.description}}
+			</p>
+			<a href="#/{{superman.id}}">Detail information...</a>
+		</div>
+
+	</div>
+</div>
