@@ -1,6 +1,6 @@
 # AngularJS-demo
 
-Thank for see it and you need run it on locallhost!
+Thank for see it and you need run it on localhost!
 
 kimthanh.job@gmail.com
 
